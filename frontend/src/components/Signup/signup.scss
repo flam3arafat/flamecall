@@ -1,0 +1,62 @@
+.signup {
+  max-width: 100%;
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h4 {
+    margin-bottom: 4rem;
+    @media (min-width: 1025px) and (max-width: 1300px) {
+    }
+    @media (min-width: 760px) and (max-width: 1024px) {
+    }
+    @media (min-width: 480px) and (max-width: 759px) {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    @media (max-width: 479px) {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1025px) and (max-width: 1300px) {
+    }
+    @media (min-width: 760px) and (max-width: 1024px) {
+    }
+    @media (min-width: 480px) and (max-width: 759px) {
+    }
+    @media (max-width: 479px) {
+    }
+    button {
+      margin-top: 3rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.5rem;
+      line-height: 18px;
+      font-weight: 500;
+      color: #100d0e;
+      background: #fcba28;
+      padding: 23px 50px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      font-family: "Paytone One", sans-serif;
+      cursor: pointer;
+      @media (min-width: 1025px) and (max-width: 1300px) {
+      }
+      @media (min-width: 760px) and (max-width: 1024px) {
+      }
+      @media (min-width: 480px) and (max-width: 759px) {
+      }
+      @media (max-width: 479px) {
+      }
+    }
+  }
+}

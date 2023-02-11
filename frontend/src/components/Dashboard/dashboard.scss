@@ -1,0 +1,360 @@
+.dashboard {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 5rem;
+  margin-top: 0;
+  @media (min-width: 1025px) and (max-width: 1300px) {
+  }
+  @media (min-width: 760px) and (max-width: 1024px) {
+    padding: 0 2.5rem;
+  }
+  @media (min-width: 480px) and (max-width: 759px) {
+    padding: 0 2.5rem;
+  }
+  @media (max-width: 479px) {
+    padding: 0 1.5rem;
+  }
+  .title {
+    margin-top: 3rem;
+    @media (min-width: 1025px) and (max-width: 1300px) {
+    }
+    @media (min-width: 760px) and (max-width: 1024px) {
+    }
+    @media (min-width: 480px) and (max-width: 759px) {
+      h2 {
+        font-size: 2.3rem !important;
+      }
+    }
+    @media (max-width: 479px) {
+      h2 {
+        font-size: 1.7rem !important;
+      }
+    }
+  }
+  .info {
+    max-width: 100%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+    @media (min-width: 1025px) and (max-width: 1300px) {
+    }
+    @media (min-width: 760px) and (max-width: 1024px) {
+    }
+    @media (min-width: 480px) and (max-width: 759px) {
+    }
+    @media (max-width: 479px) {
+    }
+    .item {
+      flex: 0 32%;
+      height: 200px;
+      margin-bottom: 2%;
+      border-radius: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "num num num . . ."
+        "num num num . . ."
+        ". . . . . ."
+        ". . . text text text"
+        ". . . text text text"
+        ". . . text text text";
+      &.green {
+        background-color: #0fa85b;
+      }
+      &.orange {
+        background-color: #fc7427;
+      }
+      &.pink {
+        background-color: #f38ba2;
+      }
+      @media (min-width: 1025px) and (max-width: 1300px) {
+      }
+      @media (min-width: 760px) and (max-width: 1024px) {
+      }
+      @media (min-width: 480px) and (max-width: 759px) {
+        flex: 0 96%;
+        margin-bottom: 6%;
+        height: 170px;
+      }
+      @media (max-width: 479px) {
+        flex: 0 96%;
+        margin-bottom: 6%;
+        height: 150px;
+      }
+      .num {
+        grid-area: num;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 1.5rem;
+        font-weight: 900;
+        font-size: 4.5rem;
+        font-family: "Paytone One", sans-serif;
+        @media (min-width: 1025px) and (max-width: 1300px) {
+        }
+        @media (min-width: 760px) and (max-width: 1024px) {
+        }
+        @media (min-width: 480px) and (max-width: 759px) {
+        }
+        @media (max-width: 479px) {
+        }
+      }
+      .text {
+        grid-area: text;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 1.8rem;
+        font-weight: 700;
+        font-size: 1.9rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        @media (min-width: 1025px) and (max-width: 1300px) {
+        }
+        @media (min-width: 760px) and (max-width: 1024px) {
+        }
+        @media (min-width: 480px) and (max-width: 759px) {
+        }
+        @media (max-width: 479px) {
+        }
+      }
+    }
+  }
+  .contacts {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    @media (min-width: 1025px) and (max-width: 1300px) {
+    }
+    @media (min-width: 760px) and (max-width: 1024px) {
+    }
+    @media (min-width: 480px) and (max-width: 759px) {
+    }
+    @media (max-width: 479px) {
+    }
+    .con {
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (min-width: 1025px) and (max-width: 1300px) {
+      }
+      @media (min-width: 760px) and (max-width: 1024px) {
+      }
+      @media (min-width: 480px) and (max-width: 759px) {
+        h3 {
+          font-size: 1.9rem;
+        }
+      }
+      @media (max-width: 479px) {
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+      button {
+        border: none;
+        border-radius: 6px;
+        font-size: 1.5rem;
+        line-height: 18px;
+        font-weight: 500;
+        color: #100d0e;
+        background: #fcba28;
+        padding: 23px 50px;
+        border-radius: 9999px;
+        text-transform: uppercase;
+        font-family: "Paytone One", sans-serif;
+        cursor: pointer;
+        @media (min-width: 1025px) and (max-width: 1300px) {
+        }
+        @media (min-width: 760px) and (max-width: 1024px) {
+        }
+        @media (min-width: 480px) and (max-width: 759px) {
+          font-size: 1.1rem;
+          padding: 18px 36px;
+        }
+        @media (max-width: 479px) {
+          font-size: 0.8rem;
+          padding: 10px 20px;
+        }
+      }
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 1025px) and (max-width: 1300px) {
+      }
+      @media (min-width: 760px) and (max-width: 1024px) {
+      }
+      @media (min-width: 480px) and (max-width: 759px) {
+      }
+      @media (max-width: 479px) {
+      }
+      .single {
+        width: 100%;
+        height: 100px;
+        background: transparent;
+        border-radius: 9999px;
+        border: 3px #fcba28 solid;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (min-width: 1025px) and (max-width: 1300px) {
+        }
+        @media (min-width: 760px) and (max-width: 1024px) {
+        }
+        @media (min-width: 480px) and (max-width: 759px) {
+        }
+        @media (max-width: 479px) {
+        }
+        .single-one {
+          width: 70%;
+          padding-left: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          @media (min-width: 1025px) and (max-width: 1300px) {
+          }
+          @media (min-width: 760px) and (max-width: 1024px) {
+          }
+          @media (min-width: 480px) and (max-width: 759px) {
+          }
+          @media (max-width: 479px) {
+          }
+          img {
+            width: 70px;
+            height: 70px;
+            margin-right: 1rem;
+            @media (min-width: 1025px) and (max-width: 1300px) {
+            }
+            @media (min-width: 760px) and (max-width: 1024px) {
+            }
+            @media (min-width: 480px) and (max-width: 759px) {
+              width: 50px;
+              height: 50px;
+            }
+            @media (max-width: 479px) {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .both {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: 1025px) and (max-width: 1300px) {
+            }
+            @media (min-width: 760px) and (max-width: 1024px) {
+            }
+            @media (min-width: 480px) and (max-width: 759px) {
+            }
+            @media (max-width: 479px) {
+            }
+            p {
+              font-weight: 700;
+              font-size: 2rem;
+              text-transform: capitalize;
+              margin: 0;
+              @media (min-width: 1025px) and (max-width: 1300px) {
+              }
+              @media (min-width: 760px) and (max-width: 1024px) {
+              }
+              @media (min-width: 480px) and (max-width: 759px) {
+                font-size: 1.2rem;
+              }
+              @media (max-width: 479px) {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+        .single-two {
+          width: 30%;
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 2rem;
+          @media (min-width: 1025px) and (max-width: 1300px) {
+          }
+          @media (min-width: 760px) and (max-width: 1024px) {
+          }
+          @media (min-width: 480px) and (max-width: 759px) {
+          }
+          @media (max-width: 479px) {
+          }
+          .edit {
+            border: none;
+            font-size: 1.4rem;
+            background: #11b5e5;
+            color: #fff;
+            padding: 0.5rem 1.2rem;
+            font-weight: 600;
+            text-transform: lowercase;
+            cursor: pointer;
+            border-radius: 9999px;
+            margin-right: 1rem;
+            @media (min-width: 1025px) and (max-width: 1300px) {
+            }
+            @media (min-width: 760px) and (max-width: 1024px) {
+            }
+            @media (min-width: 480px) and (max-width: 759px) {
+              padding: 0.3rem 1rem;
+              font-size: 1rem;
+            }
+            @media (max-width: 479px) {
+              padding: 0.2rem 0.8rem;
+              font-size: 1rem;
+            }
+          }
+          .delete {
+            border: none;
+            font-size: 1.4rem;
+            background: #ed203d;
+            color: #fff;
+            padding: 0.5rem 1.2rem;
+            font-weight: 600;
+            text-transform: lowercase;
+            cursor: pointer;
+            border-radius: 9999px;
+            @media (min-width: 1025px) and (max-width: 1300px) {
+            }
+            @media (min-width: 760px) and (max-width: 1024px) {
+            }
+            @media (min-width: 480px) and (max-width: 759px) {
+              padding: 0.3rem 1rem;
+              font-size: 1rem;
+            }
+            @media (max-width: 479px) {
+              padding: 0.2rem 0.8rem;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  Dialog {
+    Form {
+      button {
+        border: none;
+        border-radius: 6px;
+        font-size: 1.5rem;
+        line-height: 18px;
+        font-weight: 500;
+        color: #100d0e;
+        background: #fcba28;
+        padding: 23px 50px;
+        border-radius: 9999px;
+        text-transform: uppercase;
+        font-family: "Paytone One", sans-serif;
+        cursor: pointer;
+      }
+    }
+  }
+}

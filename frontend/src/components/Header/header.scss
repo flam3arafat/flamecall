@@ -1,0 +1,213 @@
+.header {
+  background: transparent;
+  height: 10vh;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    padding-left: 5rem;
+    width: 30%;
+    text-transform: uppercase;
+    font-family: "Paytone One", sans-serif;
+    font-size: 2.3rem;
+    text-shadow: 3px 3px 0 #006d77, -1px -1px 0 #006d77, 1px -1px 0 #006d77,
+      -1px 1px 0 #006d77, 1px 1px 0 #006d77;
+    @supports (-webkit-text-stroke: 0.6px #f9f4da) {
+      -webkit-text-stroke: 0.6px #f9f4da;
+      -webkit-text-fill-color: #fcba28;
+    }
+    @media (min-width: 1025px) and (max-width: 1300px) {
+      font-size: 2.1rem;
+    }
+    @media (min-width: 760px) and (max-width: 1024px) {
+      font-size: 1.8rem;
+    }
+    @media (min-width: 480px) and (max-width: 759px) {
+      font-size: 1.6rem;
+    }
+    @media (max-width: 479px) {
+      font-size: 1.4rem;
+    }
+  }
+  .cta {
+    padding-right: 5rem;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media (min-width: 1025px) and (max-width: 1300px) {
+    }
+    @media (min-width: 760px) and (max-width: 1024px) {
+    }
+    @media (min-width: 480px) and (max-width: 759px) {
+    }
+    @media (max-width: 479px) {
+    }
+    .nav-checkbox {
+      display: none;
+      &:checked ~ .mobile {
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+        background: hsla(340, 10%, 6%, 0.45);
+        pointer-events: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .desk {
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          margin-bottom: 0.7rem;
+          AppBar {
+            z-index: 2500;
+          }
+          a {
+            margin-bottom: 0.7rem;
+            border: none;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 600;
+            color: #100d0e;
+            background: #fcba28;
+            padding: 13px 30px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            font-family: "Paytone One", sans-serif;
+            cursor: pointer;
+            text-align: center;
+          }
+        }
+      }
+      &:checked + .nav-button .nav-icon {
+        background-color: transparent;
+      }
+      &:checked + .nav-button .nav-icon::before {
+        transform: rotate(135deg);
+        top: 0;
+        width: 3rem;
+      }
+      &:checked + .nav-button .nav-icon::after {
+        transform: rotate(-135deg);
+        top: 0;
+        width: 3rem;
+      }
+    }
+    .nav-button {
+      position: fixed;
+      right: 2rem;
+      top: 29px;
+      z-index: 2000;
+      display: none;
+      height: 60px;
+      width: 60px;
+      @media (min-width: 480px) and (max-width: 759px) {
+        display: inline-block;
+      }
+      @media (max-width: 479px) {
+        display: inline-block;
+      }
+      .nav-icon {
+        position: relative;
+        width: 2.3rem;
+        height: 7px;
+        margin-left: 0.6rem;
+        background-color: #006d77;
+        display: inline-block;
+        transform: rotate(0.5turn);
+        border-radius: 1px;
+        &:hover .nav-icon::before {
+          top: -1rem;
+        }
+        &:hover .nav-icon::after {
+          top: 1rem;
+        }
+        &::before {
+          width: 3rem;
+          height: 7px;
+          background-color: #006d77;
+          display: inline-block;
+          border-radius: 1px;
+        }
+        &::after {
+          width: 3rem;
+          height: 7px;
+          background-color: #006d77;
+          display: inline-block;
+          border-radius: 1px;
+        }
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          transition: all 0.2s;
+        }
+        &::before {
+          top: -0.8rem;
+        }
+        &::after {
+          top: 0.8rem;
+        }
+      }
+    }
+    .mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      z-index: 1500;
+    }
+    .desktop {
+      @media (min-width: 480px) and (max-width: 759px) {
+        display: none;
+      }
+      @media (max-width: 479px) {
+        display: none;
+      }
+    }
+    a {
+      border: none;
+      // border-radius: 6px;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 500;
+      color: #fcba28;
+      background: transparent;
+      padding: 13px 30px;
+      border-radius: 9999px;
+      border: 3px #fcba28 solid;
+      text-transform: uppercase;
+      font-family: "Paytone One", sans-serif;
+      cursor: pointer;
+      margin-right: 0.5rem;
+      &:hover {
+        background: #fcba28;
+        color: #100d0e;
+      }
+      @media (min-width: 1025px) and (max-width: 1300px) {
+        font-size: 14px;
+        line-height: 15px;
+        padding: 13px 30px;
+      }
+      @media (min-width: 760px) and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 13px;
+        padding: 13px 30px;
+      }
+      @media (min-width: 480px) and (max-width: 759px) {
+        font-size: 11px;
+        line-height: 14px;
+        padding: 13px 30px;
+      }
+      @media (max-width: 479px) {
+      }
+    }
+  }
+}

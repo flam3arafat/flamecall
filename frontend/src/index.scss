@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Paytone+One&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  @media (min-width: 760px) and (max-width: 1024px) {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #100d0e;
+  color: #f9f4da;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-family: "Paytone One", sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 2.3rem;
+  line-height: 34px;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+*:disabled {
+  opacity: 0.6;
+}
